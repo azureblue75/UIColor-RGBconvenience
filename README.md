@@ -8,3 +8,7 @@ than needing a calculator to convert 0x3c to a floating point value, simply pass
 `UIColor colorWithRGB:`
 
     UIColor *myColor = [UIColor colorWithRGB:0x3c4580];
+
+Or, if you require an alpha value != 1.0, include the alpha value in the low-order byte :
+
+    UIColor *myColor = [UIColor colorWithRGBA:0x3c458080];
